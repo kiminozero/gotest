@@ -19,3 +19,15 @@ func TestCountingSort(t *testing.T) {
     }
     fmt.Println(B)
 }
+
+func TestCountingRange(t *testing.T) {
+    nums := []int{1,0,2,4,11,7,8,9,0,3}
+    a, b := 1, 7
+    want := 5
+    k := 12
+    count := CountingRange(nums, k, a, b)
+
+    if count != want  {
+        t.Errorf(" TestCountingRange fail ")
+    }
+}

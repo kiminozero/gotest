@@ -24,3 +24,22 @@ func CountingSort(A, B []int, k int) {
     }
 }
 
+
+
+func CountingRange(A []int, k ,a, b int) int{
+    C := make([]int, k)
+    // counting every num count
+    for _, j := range(A){
+        C[j] = C[j] + 1
+    }
+    //fmt.Println(C)
+    // counting <= numi's count
+    for i := 1; i < k; i++ {
+        C[i] = C[i] + C[i-1]
+    }
+    // fmt.Println(C)
+
+    return C[b]-C[a-1] 
+}
+
+
