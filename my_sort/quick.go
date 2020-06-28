@@ -81,7 +81,7 @@ func RandomizedSelectI(A []int, p, r, i int) int{
             p = q + 1
             i = i-k
         }else{
-            return A[p]
+            return A[q]
         }
     }
 
