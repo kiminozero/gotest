@@ -103,3 +103,21 @@ func (s *stackL) Pop() (int, error) {
 		return cur.val, nil
 	}
 }
+/*
+type stackCh struct {
+    ch1 chan
+    ch2 chan
+}
+
+func (s *stackCh)Push(v int) {
+
+}
+
+func (s *stackCh)Pop(v int) {
+
+}
+
+func (s *stackCh)StackEmpty()bool {
+
+}
+*/
