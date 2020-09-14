@@ -23,7 +23,7 @@ func buildNext(P string) []int {
     return next
 }
 
-func Search(S, P string) ([]int, bool) {
+func KMPSearch(S, P string) ([]int, bool) {
     i, n := 0, len(S)
     j, m := 0, len(P)
     next := buildNext(P)
@@ -59,5 +59,5 @@ func main() {
     n := buildNext(P)
     fmt.Println(n)
     fmt.Println(buildNext(P1))
-    fmt.Println(Search(S, P))
+    fmt.Println(KMPSearch(S, P))
 }
