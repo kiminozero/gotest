@@ -11,13 +11,13 @@ func main() {
     root := obj.deserialize(data)
     fmt.Println("root.Val = ", root.Val)
     fmt.Println("inorder morris")
-    InOrderMorris(root)
+    InorderMorris(root)
     
     fmt.Println("preorder morris")
-    PreOrderMorris(root)
+    PreorderMorris(root)
 
     fmt.Println("inorder")
-    InOrder(root)
+    Inorder(root)
 
     fmt.Println("serialize")
     fmt.Println(obj.serialize(root))

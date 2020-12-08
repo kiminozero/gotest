@@ -8,7 +8,7 @@ func visit(root *TreeNode) {
     fmt.Println(root.Val)
 }
 
-func InOrderMorris(root *TreeNode) {
+func InorderMorris(root *TreeNode) {
     var cur, predecessor *TreeNode
     helper := func() {
         fmt.Println(cur.Val)
@@ -40,7 +40,7 @@ func InOrderMorris(root *TreeNode) {
 }
 
 
-func PreOrderMorris(root *TreeNode) {
+func PreorderMorris(root *TreeNode) {
 
     var cur, predecessor *TreeNode
 
@@ -68,11 +68,11 @@ func PreOrderMorris(root *TreeNode) {
     }
 }
 
-func InOrder(root *TreeNode) {
+func Inorder(root *TreeNode) {
     if root == nil {
         return
     }
-    InOrder(root.Left)
+    Inorder(root.Left)
     visit(root)
-    InOrder(root.Right)
+    Inorder(root.Right)
 }
